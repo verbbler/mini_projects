@@ -1,0 +1,13 @@
+* 
+{
+    cursor: url(https://i.imgur.com/BHitacd.png), auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+  
+.catImg {
+    width: 150px;
+    height: 150px;
+    transition: 0.4s;
+}
