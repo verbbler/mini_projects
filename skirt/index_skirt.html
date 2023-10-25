@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<title>Quiz</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style_skirt.css">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="true"/>
+		<script type="text/javascript" src="script_skirt.js"></script>
+	</head>
+
+<body>
+    <div id = "quiz" class = "wrapper">
+		<main class = "main">
+			<div class = "quiz_body">
+				<div class = "quiz_images">
+					<div class = "image image0" id = "images"></div>
+					<div class = "image image1" id = "img1"></div>
+					<div class = "image image2" id = "img2"></div>
+   				 </div>
+				 <div class = "head_content" id = "head"></div>
+				<div class = "size" id = "size">
+				<input type="range" min="86" max="128" step="6" value="86" class = "slider" id="Slider" oninput="size_slider()">
+				<div id = "allValues" class = "allValue"></div>
+				<div id="value" class = "sizeValue" style="display:none"></div>
+				</div>
+				<div class = "buttons">
+					<div class = "button_content" id = "buttons"></div>
+				</div>
+				<div class = "sizeTable" id = "table">Таблица размеров</div>
+				<div class = "buttons_shopping">
+				<div class = "back_button" id = "historyButton" onclick = "GoBack()"> < </div>
+				<div class = "shop" id = "toShop" onclick = "goShop()"><div class = "imgShop" id = "shopIcon"></div> <div class = "valueShop" id = "shopValue">4990 ₽</div></div>
+				<div class = "cantShop" id = "noShop" style="display: none;">Пожалуйста, выберите все модификации <div class = "heartIcon" id = "heart"></div></div>
+				<div class = "next_button" id = "go" onclick = "GoNext()"> > </div>
+				</div>
+	            <div class = "quiz_footer">
+					<div class = "footer_content" id = "pages"></div>
+				</div>
+		   </div>
+		</main>
+
+	<div id = "results" class = "results" style = "display:none;"></div>
+</body></div>
+<footer></footer>
+
+<script>
+	window.onload = (event) => {
+		Startup();
+	};
+	</script>
+
+	</html>

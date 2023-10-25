@@ -1,0 +1,420 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: helvetica, arial;
+}
+
+.wrapper
+{
+	width: 100%;
+	height: 100%;
+	background: rgba(210, 170, 118, 0.13);;
+}
+
+.head_content
+{
+	text-align: center;
+	border: 2px solid rgba(181, 149, 124, 1);
+	background-color: #FFFCFA;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	width: 95%;
+	max-height: 35px;
+	font-weight: 700;
+}
+
+.quiz_body
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.quiz_body > div
+{
+	flex: 1;
+}
+
+.quiz_footer 
+{
+	display: none;
+}
+
+.footer_content 
+{
+	display: none;
+}
+
+/* .buttons
+{
+	margin-top: 180px;
+} */
+
+.button_content
+{
+	display: flex;
+	flex-direction: row;
+	overflow: scroll;
+	padding: 5px;
+}
+
+.button
+{
+	flex: 1;
+	flex: 1;
+	border: 2px solid rgba(165, 125, 97, 0.65);
+	border-radius: 10px;
+	background: #FFFCFA;
+	margin: 5px;
+	padding: 5px;
+	min-height: 165px;
+	max-height: 165px;
+	min-width: 115px;
+	max-width: 115px;
+	background-size: 100%;
+	background-position: center;
+	color: rgba(0, 0, 0, 0);
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	font-family: "Pips";
+	font-weight: normal;
+}
+
+.button.selected
+{
+   	border: 2px solid rgba(0, 0, 0, 0.3);
+	color: rgb(255, 255, 255);
+	box-shadow: 0 -30px 20px 0px #A67D61 inset; /* 0 -45 20px -15px  */
+}
+
+.button.slider
+{
+	border: 0;
+	background: rgba(210, 170, 118, 0.13);
+	min-height: 28px;
+	max-height: 28px;
+	min-width: unset;
+	max-width: none;
+	color: black;
+	box-shadow: none;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.results
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 350px;
+}
+
+.results > div
+{
+	min-height: 20px;
+	max-height: 20px;
+	flex-direction: 1;
+	text-align: center;
+}
+
+/* .image > .quiz_images */
+
+.quiz_images
+{
+	display: flex;
+	min-height: 350px;
+	background: white;
+	margin: 12px;
+	border: 2px solid white;
+	border-radius: 20px;
+	max-height: 350px;
+}
+
+.image
+{
+	position: absolute;
+	top: 0px;
+	margin: auto;
+}
+
+.image > img
+{
+	width: 100%;
+}
+
+.image0
+{
+	top: 7%;
+    left: 18%;
+}
+
+.image1
+{
+	top: 220px;
+	left: 132px;
+	width: 125px;
+}
+
+.image2
+{
+	top: 312px;
+	left: 134px;
+	width: 110px;
+}
+
+.mini_images
+{
+	flex-direction: row;
+	display: flex;
+	flex: 1;
+}
+
+.mini0
+{
+	top: 445px;
+	width: 80px;
+	left: 15px;
+	border: 2px solid #DAD7D4;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 100px;
+	background-color: #FFFCFA;
+}
+
+.mini1
+{
+	top: 445px;
+	width: 80px;
+	left: 140px;
+	border: 2px solid #DAD7D4;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 100px;
+	background-color: #FFFCFA;
+}
+
+.mini2
+{
+	top: 445px;
+	width: 80px;
+	left: 270px;
+	border: 2px solid #DAD7D4;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 100px;
+	background-color: #FFFCFA;
+}
+
+.buttons_shopping
+{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.back_button
+{
+	display: flex;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: rgba(181, 149, 124, 1);
+	width: 55px;
+	background-color: #FFFCFA;
+	flex: 1;
+	height: 31px;
+	margin: 5px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.shop
+{
+	background: rgba(181, 149, 124, 1);
+	border-radius: 10px;
+	margin: 5px;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	min-height: 3px;
+	max-height: 30px;
+	text-align: center;
+	flex: 1.5;
+	padding: 10px;	
+}
+
+.valueShop
+{
+	position: absolute;
+	flex: 1;
+	display: flex;
+	color: #FFFCFA;
+	width: 36%;
+	justify-content: end;
+}
+
+.imgShop
+{
+	position: absolute;
+	flex: 1;
+	display: flex;
+	width: 36%;
+}
+
+.cantShop
+{
+	background-color: #D28176;
+	color: #FFFCFA;
+	margin: 5px;
+	border-radius: 10px;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	min-height: 35px;
+	max-height: 35px;
+	text-align: center;
+	justify-content: center;
+	padding-left: 10px;
+}
+
+.heartIcon
+{
+	margin: 5px;
+	transform: scale(70%);
+	height: 65%;
+}
+
+.next_button
+{
+	display: flex;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: rgba(181, 149, 124, 1);
+	width: 55px;
+	background-color: #FFFCFA;
+	flex: 1;
+	height: 31px;
+	margin: 5px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.next_button.disabled
+{
+	pointer-events: none;
+	color: rgba(0, 0, 0, 0.3);
+	border-color: rgba(181, 149, 124, 0.5);
+}
+
+.mainButtons
+{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+}
+
+.size
+{
+	min-height: 1px;
+}
+
+input[type="range"]
+{
+	-webkit-appearance: none;  /* Override default CSS styles */
+	-moz-appearance: none;
+    appearance: none;
+	height: 15px;
+	border: 2px solid rgba(181, 149, 124, 1);
+	border-radius: 8px;
+	background: #FFFCFA;
+	width: 94%;
+	margin: 10px;
+	margin-top: 40px;
+	display: flex;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+input[type=range]::-webkit-slider-thumb
+{
+	background: url('https://svgshare.com/i/xC7.svg');
+	border-radius: 30px;
+	background-size: 100%;
+	background-position: center;
+	cursor: pointer;
+	width: 65px;
+	height: 65px;
+	-webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-thumb
+{
+	background: url('https://svgshare.com/i/xC7.svg');
+	background-size: 100%;
+	background-position: center;
+	cursor: pointer;
+	width: 19px;
+	height: 19px;
+	-webkit-appearance: none;
+}
+
+#value
+{
+	text-align: center;
+	margin-top: 30px;
+	display: flex;
+}
+
+.sizeTable
+{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	align-items: end;
+	color: rgba(181, 149, 124, 1);
+	text-decoration: underline;
+    margin-top: 9px;
+    margin-bottom: 14px;
+}
+
+.size
+{
+	display: flex;
+}
+
+#allValues
+{
+	flex-direction: row;
+	text-align: center;
+	margin-top: 40px;
+	display: none;
+}
+
+#allValues > div 
+{
+	flex: 1;
+	cursor: default;
+}
+
+@font-face {
+	font-family: "Pips";
+	src: url("https://static.tildacdn.com/tild3138-3235-4131-b033-656131383564/ofontru_PIPS.woff") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

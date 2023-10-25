@@ -1,0 +1,261 @@
+.openPopup
+{
+	cursor: pointer;
+	display: none;
+}
+
+.CartIcon
+{
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+
+.popup
+{
+	display: none;
+}
+
+.popup.active
+{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 370px;
+	max-width: 370px;
+	border-radius: 30px;
+	border: 3px solid #DAD7D4;
+	background: #FFFCFA;
+	flex-direction: column;
+	display: flex;
+	opacity: 1;
+	pointer-events: all;
+	transition: 0.5s all;
+	margin-bottom: 15px;
+	font-family: helvetica, arial;
+}
+
+.header
+{
+	flex-direction: row;
+	display: flex;
+	border-bottom: 2px solid #DAD7D4;
+	padding: 5px;
+	flex: 1;
+}
+
+.cart
+{
+	display: flex;
+	height: 30px;
+	padding-left: 20px;
+	flex: 5;
+	align-items: center;
+	font-weight: 600;
+}
+
+.closePopup
+{
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.closeCart
+{
+	min-width: 30px;
+	max-width: 30px;
+}
+
+.itemBox
+{
+	flex: 5;
+	max-height: 250px;
+	overflow: scroll;
+}
+
+.emptyCart
+{
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: "Pips";
+}
+
+.items
+{
+	padding: 5px;
+}
+
+.itemObjects
+{
+	display: flex;
+}
+
+.itemImage
+{
+	min-width: 100px;
+	max-width: 100px;
+	height: 100px;
+	border-radius: 20px;
+	border: 2px solid #D2AA76;
+	margin: 10px;
+}
+
+.itemData
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.itemName
+{
+	font-size: 23px;
+	font-family: "Pips";
+	font-weight: 600;
+}
+
+.itemExtra
+{
+	font-size: 16px;
+	font-family: "Pips";
+	font-weight: normal;
+}
+
+.extras
+{
+	flex-direction: row;
+	display: flex;
+	padding: 5px;
+	margin-bottom: 7px;
+}
+
+.counters
+{
+	flex: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	padding-left: 15px;
+}
+
+.plusCounter
+{
+	text-align: center;
+	cursor: pointer;
+}
+
+.plusSVG
+{
+    width: 15px;
+}
+
+.itemCounter
+{
+	border: 1px solid #DAD7D4;
+	border-radius: 10px;
+	background: #FFFCFA;
+	font-size: 20px;
+	height: 35px;
+	width: 35px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.minusCounter
+{
+	text-align: center;
+	cursor: pointer;
+}
+
+.minusSVG
+{
+    width: 15px;
+    padding-bottom: 6px;
+}
+
+.itemPrice
+{
+	flex: 1.5;
+	align-items: center;
+	justify-content: end;
+	display: flex;
+	font-size: 16px;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.footer
+{
+	padding: 10px;
+	flex: 1;
+	border-top: 2px solid #DAD7D4;
+}
+
+.priceButtons
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.totalPrice
+{
+	flex: 5;
+	display: flex;
+	justify-content: start;
+	margin: 10px;
+	text-align: center;
+	margin-left: 16px;
+}
+
+.totalNumber
+{
+	margin: 10px;
+	margin-right: 15px;
+	font-size: 16px;
+}
+
+.goORback
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.backToShop
+{
+	flex: 1;
+	border-radius: 15px;
+	border: 2px solid #D2AA76;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+	margin: 5px;
+	font-weight: 600;
+}
+
+.goToPayment
+{
+	flex: 1;
+	border-radius: 15px;
+	border: 2px solid #D2AA76;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+	margin: 5px;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Pips";
+	src: url("https://static.tildacdn.com/tild3138-3235-4131-b033-656131383564/ofontru_PIPS.woff") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

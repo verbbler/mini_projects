@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<title>cart</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="copy_cart.css">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="true"/>
+		<script type="text/javascript" src="copy_script_cart.js"></script>
+	</head>
+	<body>
+
+		<div class = "openPopup" id = "open" onclick = "OpenPopup()"><img src = "https://svgshare.com/i/wMv.svg" class = "CartIcon"></div>
+	
+	<div class = "popup" id = "popup">
+		<div class = "header" id = "header">
+			<div class = "cart" id = "inCart">В КОРЗИНЕ:</div>
+			<div class = "closePopup" id = "Close" onclick = "ClosePopup()"><img src = "https://i.imgur.com/H9R1RkT.png" class = "closeCart"></div>
+		</div>
+		<div class = "itemBox" id = "box">
+			<div class = "emptyCart" id = "empty">К сожалению, корзина пустая :(</div>
+			<div class = "items" id = "item">
+				<div class = "itemObjects" id = "objects">
+					<div class = "itemImage" id = "image"></div>
+					<div class = "itemData" id = "dataItem">
+					<div class = "itemName" id = "itemName"></div>
+					<div class = "itemExtra" id = "extra"></div>
+				</div>
+				</div>
+				<div class = "extras" id = "extraButtons">
+					<div class = "counters" id = "allCounters">
+						<div class = "minusCounter" id = "minus" onclick = "CountMinus()"><img src="https://svgshare.com/i/wcj.svg" class = "minusSVG"></div>
+						<div class = "itemCounter" id = "counter">1</div>
+						<div class = "plusCounter" id = "plus" onclick = "CountPlus()"><img src="https://svgshare.com/i/wcv.svg" class = "plusSVG"></div>
+					</div>
+					<div class = "itemPrice" id = "price"></div>
+				</div>
+			</div>
+		</div>
+		<div class = "footer" id = "footerId">
+			<div class = "priceButtons" id = "prices">
+				<div class = "totalPrice" id = "total">СУММА ЗАКАЗА:</div>
+				<div class = "totalNumber" id = "number"></div>
+			</div>
+			<div class = "goORback" id = "orButtons">
+				<div class = "backToShop" id = "back">Продолжить покупки</div>
+				<div class = "goToPayment" id = "payment">Оформить заказ</div>
+			</div>
+		</div>		
+	</div>	
+	</body>
+
+	<script>
+		// window.onload = (event) => {
+		// 	Startup();
+		// };
+	</script>
+
+</html>
